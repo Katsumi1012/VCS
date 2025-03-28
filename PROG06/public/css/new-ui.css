@@ -1,0 +1,82 @@
+/* Reset và thiết lập chung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Layout chính */
+.main-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar hiện đại */
+.new-sidebar {
+  width: 240px;
+  background-color: #2e3a46;
+  color: #fff;
+  padding: 20px;
+}
+.new-sidebar .sidebar-menu li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.new-sidebar .sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.new-sidebar .sidebar-menu li a:hover {
+  color: #1abc9c;
+}
+
+/* Navbar hiện đại */
+.new-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1abc9c;
+  padding: 15px 30px;
+  color: #fff;
+}
+.new-navbar .navbar-brand a {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.new-navbar .navbar-items {
+  display: flex;
+  gap: 20px;
+}
+.new-navbar .navbar-items li a {
+  color: #fff;
+  text-decoration: none;
+}
+.new-navbar .navbar-items li a:hover {
+  text-decoration: underline;
+}
+
+/* Nội dung chính */
+.content-container {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Các hiệu ứng chuyển cảnh cơ bản */
+a {
+  transition: all 0.3s ease;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* ...existing code thay thế các kiểu cũ (nếu cần)... */
